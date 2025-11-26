@@ -1,0 +1,103 @@
+/* General Setup and Centering */
+body {
+    /* Full height and width to center content */
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    
+    /* Use Flexbox for easy centering */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;   /* Center vertically */
+    
+    /* Optional: Set a background color for the whole page */
+    background-color: #f4f7f6;
+    font-family: 'Arial', sans-serif;
+}
+
+div {
+    /* Confine the main content and allow internal centering */
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 90%; /* Responsive width */
+    width: 400px; /* Max width on larger screens */
+}
+
+/* Header Styling */
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em; /* Responsive font size */
+}
+
+/* Paragraph Styling (for the fact) */
+#result {
+    margin-top: 25px; /* Slightly more separation */
+    padding: 20px; /* Slightly larger padding for breathing room */
+    min-height: 80px; /* Taller box for better visual balance */
+    
+    /* Enhanced Background and Border */
+    background-color: #f0f7ff; /* Whiter, cleaner light blue */
+    border-radius: 12px; /* More rounded corners */
+    border-left: 5px solid #007bff; /* Add a striking blue emphasis bar on the left */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    
+    /* Stylish Text Properties */
+    color: #333333; /* Darker text for better contrast and readability */
+    font-family: 'Georgia', serif; /* Use a classic, elegant serif font */
+    font-size: 1.1em; /* Slightly larger text */
+    line-height: 1.6; /* Increased line height for easy reading */
+    font-style: italic;
+    text-align: left;
+}
+
+
+/* Stylish and Colorful Button */
+button {
+    /* Size and shape */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px; /* Pill shape */
+    
+    /* Color and Text */
+    background: linear-gradient(135deg, #ff6b6b, #ffa500); /* Vibrant gradient */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    /* Visual effects */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* Hover Effect (makes it interactive) */
+button:hover {
+    /* Changes color and lifts slightly */
+    background: linear-gradient(135deg, #ffa500, #ff6b6b);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.6);
+}
+
+/* Active/Click Effect (makes it feel clicked) */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.4);
+}
+
+/* Media Query for smaller screens (Responsiveness) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Smaller header on small screens */
+    }
+
+    button {
+        padding: 12px 25px; /* Slightly smaller padding */
+        font-size: 1em; /* Slightly smaller font */
+    }
+}
